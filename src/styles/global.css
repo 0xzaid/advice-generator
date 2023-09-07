@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  /* Colors */
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+
+  /* Typography */
+  --font-size: 28px;
+  --font-family: 'Manrope', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+html,
+body {
+  height: 100vh;
+  font-size: var(--font-size);
+  background-color: var(--dark-blue);
+  color: var(--light-cyan)
+}
+
+.container {
+  width: 550px;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--dark-grayish-blue);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  font-size: 15px;
+  color: var(--neon-green);
+  letter-spacing: 3px;
+  margin: 50px 0 50px 0;
+}
+
+.advice-text {
+  margin: 0px 50px 0px 50px;
+}
+
+.divider {
+  bottom: 75px;
+  left: 50px;
+  position: fixed;
+}
+
+.icon-dice-wrapper {
+  height: 70px;
+  width: 70px;
+  background-color: var(--neon-green);
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  bottom: -35px;
+  right: 245px;
+}
+
+.icon-dice-wrapper:hover {
+  box-shadow: 0 0 35px var(--neon-green)
+}
+
+.icon-dice {
+  margin-top: 22px;
+  width: 23px;
+}
